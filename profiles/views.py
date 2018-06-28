@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.permissions import DjangoModelPermissions
 from rest_framework import viewsets
-from profile.serializers import ProfileSerializer
+from profiles.serializers import ProfileSerializer
 
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
