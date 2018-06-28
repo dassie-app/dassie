@@ -6,4 +6,4 @@ def profile_photo_upload_handler(self, filename):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    profileImage = models.ImageField(upload_to=profile_photo_upload_handler, blank=True)
+    profile_image = models.ImageField(upload_to=profile_photo_upload_handler, blank=True)
