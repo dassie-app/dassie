@@ -19,8 +19,8 @@ from rest_framework.authtoken import views as auth_views
 from profiles.views import profile_view
 
 urlpatterns = [
-    path('profile/', profile_view),
     path('api/', include('rest_framework.urls')),
+    path('api/profile/', profile_view),
     path('authenticate/', auth_views.obtain_auth_token),
     path('admin/', admin.site.urls),
 ]
